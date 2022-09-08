@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Loop Nerd" content="Códigos Pronto" />
+    <meta name="description" content="Códigos e sites pronto para você utilizar no seu negócio."/>
+    <meta name="keywords" content="Html, Css, Jquery, Wordpress, Sites Grátis, Tema para Wordpress, Site Responsivo"/>
+    <meta name="author" content="Hélio Júnior" />
+    <meta name="URL" content="https://www.hj.dev.br"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts-icones.css">
+    
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <!-- javascript -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script> -->
+
+    <div class="container2">
+        <h1 class="page-title">
+          Conversor de moedas
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+        <p class="page-subtitle">
+            Cotação do Dólar U$, Euro €, Ouro e Bitcoin
+        </p>
+                    <!-- DOLAR -->
+                    <a href="https://dolarhoje.com/" class="dolar-hoje-button" data-currency="dolar" target="_blank" title="O  hoje vale R$ 5,24" data-loaded="true" style="text-decoration: none;">
+                        <span style="background: #26A65B; border-radius: 2px; display: inline-block; color: #fff; font-family: sans-serif; font-size: 11px; font-weight: lighter; line-height: 1.4em; letter-spacing: 0.04rem; position: relative; margin: 0; padding: 4px 7px 4px 8px">    
+                            <span style="margin: 0; padding: 0">Dólar</span>    
+                            <span style="margin: 0 0 0 12px; padding: 0">R$ 5,24</span>
+                        </span>
+                    </a>
+                    <script async="" src="//dolarhoje-widgets.s3.amazonaws.com/button.js"></script>
+                    <!-- EURO -->
+                    <a href="https://dolarhoje.com/euro-hoje/" class="euro-hoje-button" data-currency="euro" target="_blank" title="O  hoje vale R$ 5,19" data-loaded="true" style="text-decoration: none;">
+                        <span style="background: #4183D7; border-radius: 2px; display: inline-block; color: #fff; font-family: sans-serif; font-size: 11px; font-weight: lighter; line-height: 1.4em; letter-spacing: 0.04rem; position: relative; margin: 0; padding: 4px 7px 4px 8px">    
+                            <span style="margin: 0; padding: 0">Euro</span>    
+                            <span style="margin: 0 0 0 12px; padding: 0">R$ 5,19</span>
+                        </span>
+                    </a>
+                    <script async="" src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script>
+                    <!-- OURO -->
+                    <a href="https://dolarhoje.com/ouro-hoje/" class="ouro-hoje-button" data-currency="ouro" target="_blank" title="O  hoje vale R$ 285,83" data-loaded="true" style="text-decoration: none;">
+                        <span style="background: #DEB510; border-radius: 2px; display: inline-block; color: #fff; font-family: sans-serif; font-size: 11px; font-weight: lighter; line-height: 1.4em; letter-spacing: 0.04rem; position: relative; margin: 0; padding: 4px 7px 4px 8px">    
+                            <span style="margin: 0; padding: 0">Ouro</span>    
+                            <span style="margin: 0 0 0 12px; padding: 0">R$ 285,83</span>
+                        </span>
+                    </a>
+                    <script async="" src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script>
+                    <!-- BITCOIN -->
+                    <a href="https://dolarhoje.com/bitcoin-hoje/" class="bitcoin-hoje-button" data-currency="bitcoin" target="_blank" title="O  hoje vale R$ 100961,53" data-loaded="true" style="text-decoration: none;">
+                        <span style="background: #E87E04; border-radius: 2px; display: inline-block; color: #fff; font-family: sans-serif; font-size: 11px; font-weight: lighter; line-height: 1.4em; letter-spacing: 0.04rem; position: relative; margin: 0; padding: 4px 7px 4px 8px">    
+                            <span style="margin: 0; padding: 0">Bitcoin</span>    
+                            <span style="margin: 0 0 0 12px; padding: 0" id="valorBitcoin">R$ 100961,53</span>
+                        </span>
+                    </a>
+                    <script async="" src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script>
+                   <br><br>
+               
+        
+        <label for="moeda">Insira o valor</label><br>
+        <input type="number" id="valor" size="2" /><br>
+        <button class="buttonDolar" type="submit" onclick="ConverterDolar()">Dólar</button>
+        <button class="buttonEuro"type="submit" onclick="ConverterEuro()">Euro</button>
+        <button class="buttonOuro"type="submit" onclick="ConverterOuro()">Ouro</button>
+        <button class="buttonBitcoin"type="submit" onclick="ConverterBitcoin()">Bitcoin</button>
+        
+        <h2 id="valorConvertidoDolar"></h2>
+        <h2 id="valorConvertidoEuro"></h2>
+        <h2 id="valorConvertidoOuro"></h2>
+        <h2 id="valorConvertidoBitcoin"></h2>
+        
+
+      </div>
+      <!-- <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo"> -->
+
+
+        
+                <footer>
+                <nav class="btn_social">
+                    
+                    <ul>
+
+                       <li><a href="#" target="_blank" title="facebook"><i class="icon icon-facebook"></i></a></li>
+                       <li><a href="#" target="_blank" title="instagram"><i class="icon icon-instagram"></i></a></li>
+                       <li><a href="#" target="_blank" title="linkdin"><i class="icon icon-linkedin"></i></a></li>
+
+                    
+                    </ul>
+
+                </nav><!--Btn Social--> 
+</footer>
+
+</body>
+</html>
