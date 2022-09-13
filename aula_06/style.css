@@ -1,0 +1,95 @@
+* {
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://wallpaperset.com/w/full/3/7/8/532821.jpg");
+  background-color: #111;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+table {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+h1 {
+  color: white;
+}
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+}
+
+.bn31 {
+  background-image: linear-gradient(to right, #4200f8 0%, #ff0000 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #ffffff;
+  /* display: block; */
+  height: 30px;
+  font-size: 1em;
+  /* padding: 4px; */
+  /* position: relative; */
+  text-decoration: none;
+  /* width: 7em;
+  z-index: 2; */
+}
+
+.bn31:hover {
+  color: rgb(255, 0, 0);
+}
+
+.bn31 .bn31span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn31:hover .bn31span {
+  background: transparent;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
